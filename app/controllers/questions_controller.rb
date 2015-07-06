@@ -15,7 +15,8 @@ class QuestionsController < ApplicationController
 
     if @question.save
       flash[:notice] = "Question succesfully added"
-      redirect_to user_question_path(@question, @user)
+      #objects passed into path must appear in same order they do in path, as seen below:
+      redirect_to user_question_path(@user, @question)
     else
       flash[:alert] = "There was an issue adding your question; please try again."
       redirect_to new_user_question_path

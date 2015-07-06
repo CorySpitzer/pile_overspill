@@ -18,6 +18,7 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require 'simplecov'
+require_relative 'features/log_in_and_out_page_spec'
 
 SimpleCov.start
 

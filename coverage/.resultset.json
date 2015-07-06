@@ -1,42 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/pile_overspill/spec/user/user_spec.rb": [
+      "/Users/Guest/Desktop/pile_overspill/spec/answer/answer_spec.rb": [
         1,
         null,
         1,
+        null,
         2,
-        null,
         2,
         2,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
+        2,
         null,
         null
       ],
@@ -273,6 +246,7 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/pile_overspill/config/routes.rb": [
@@ -347,6 +321,120 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/pile_overspill/app/models/answer.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/spec/answer_comment/answer_comment_spec.rb": [
+
+      ],
+      "/Users/Guest/Desktop/pile_overspill/spec/answer_comments/answer_comment_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/app/models/answer_comment.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/spec/question/question_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/app/models/question.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/spec/question_comment/question_comment_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/app/models/question_comment.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pile_overspill/spec/user/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/pile_overspill/app/models/user.rb": [
         1,
         null,
@@ -373,6 +461,6 @@
         null
       ]
     },
-    "timestamp": 1436207206
+    "timestamp": 1436211107
   }
 }

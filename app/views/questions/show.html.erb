@@ -4,7 +4,7 @@
 </h3>
 
 <p class='well'>
-  <%= @question.content %>
+  <%= @question.content %><br><%= link_to "Edit", edit_user_question_path(@user, @question) %>
 </p>
 
 <h1>Add Answer:</h1>

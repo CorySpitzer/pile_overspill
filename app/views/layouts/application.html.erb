@@ -27,7 +27,7 @@
           <% if current_user %>
             <li><%= current_user.name %></li>
             <li><%= link_to "Log Out", log_out_path %></li>
-            <li><%= link_to "Post Question", new_question_path %></li>
+            <li><%= link_to "Post Question", new_user_question_path(current_user) %></li>
           <% else %>
             <li><%= link_to "Log In", log_in_path %></li>
             <li><%= link_to "Create Account", new_user_path %></li>

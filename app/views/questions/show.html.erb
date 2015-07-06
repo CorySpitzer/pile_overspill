@@ -3,6 +3,14 @@
   <%= @question.heading %>
 </h3>
 
-<p>
+<p class='well'>
   <%= @question.content %>
 </p>
+
+<h1>Add Answer:</h1>
+
+<%=form_for Answer.new do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit "Add Answer" %>
+<% end %>

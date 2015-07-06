@@ -24,11 +24,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav special-color">
-          <% if @current_user %>
-            <li><%= @current_user.name %></li>
+          <% if current_user %>
+            <li><%= current_user.name %></li>
             <li><%= link_to "Log Out", log_out_path %>
           <% else %>
             <li><%= link_to "Log In", log_in_path %></li>
+            <li><%= link_to "Create Account", new_user_path %></li>
           <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -36,6 +37,7 @@
   </nav>
 
   <div class="container">
+    <%= flash[:notice] %>
     <%= yield %>
   </div>
 

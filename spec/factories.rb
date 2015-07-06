@@ -5,4 +5,5 @@ FactoryGirl.define do
     password '123'
     admin false
   end
+
 end

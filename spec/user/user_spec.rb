@@ -13,4 +13,25 @@ describe User do
     user.encrypt_password
     expect(user.password_salt.length).to be > 0
   end
+
+  it 'does not authenticate user with incorrect email' do
+    user = FactoryGirl.create :user
+    expect(User.authenticate("abc@abc.com", "123")).to eq nil
+  end
+
+  it 'does not authenticates a user with incorrect password' do
+    user = FactoryGirl.create :user
+    expect(User.authenticate("sam@gmail.com", "124")).to eq nil
+  end
+
+  it 'does not authenticates a user with incorrect password and incorrect email' do
+    user = FactoryGirl.create :user
+    expect(User.authenticate("sammmm@gmail.com", "124555")).to eq nil
+  end
+
+  it 'authenticates a user upon login' do
+    user = FactoryGirl.create :user
+    expect(User.authenticate("sam@gmail.com", "123")).to eq user
+  end
+
 end

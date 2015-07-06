@@ -4,6 +4,18 @@ Rails.application.routes.draw do
     resources :new
   end
 
+  resources :questions do
+    resources :answers, except: [:index]
+    resources :question_comments, except: [:index, :show]
+  end
+
+  resources :answers do
+    resources :answer_comments, except: [:index, :show]
+  end
+
+
+
+
   # resources :sessions, only: [:create, :new]
   get '/log-in' => 'sessions#new', as: :log_in
   post "/log-in" => "sessions#create"

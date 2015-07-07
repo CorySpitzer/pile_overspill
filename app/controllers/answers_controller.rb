@@ -16,7 +16,7 @@ class AnswersController < ApplicationController
     if @answer.save
       flash[:notice] = "Answer added!"
     else
-      flash[:alert] = "There was an issue adding your answer; please try again"
+      flash[:notice] = "There was an issue adding your answer; please try again"
     end
     redirect_to user_question_path(@user, @question)
   end

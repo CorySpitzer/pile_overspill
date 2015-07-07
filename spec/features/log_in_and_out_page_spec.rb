@@ -20,6 +20,16 @@ describe 'the Log in path' do
     set_current_user
     expect(page).to have_content "logged in!"
   end
+
+  it 'alerts you and redirects to login page when cant authorize' do
+    user = FactoryGirl.create :user
+    visit '/log-in'
+    fill_in 'email', :with => user.email
+    fill_in 'password', :with => "51654"
+    click_button 'Log in'
+    expect(page).to have_content "problem"
+  end
+
 end
 
 describe 'the log out path' do

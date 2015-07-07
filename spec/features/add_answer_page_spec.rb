@@ -25,3 +25,18 @@ describe 'the answering a question path' do
     expect(page).to have_content "Test answer"
   end
 end
+
+describe 'displaying answer errors path' do
+  it 'displays an error when answer has no content' do
+    user = set_current_user
+    visit '/'
+    click_link "Post Question"
+    fill_in 'Heading', :with=> "Test Question"
+    fill_in "Content", :with=> "Test Content"
+    click_button 'Add Question'
+    click_link 'Add Answer'
+    click_button "Add Answer"
+    expect(page).to have_content "issue"
+
+  end
+end

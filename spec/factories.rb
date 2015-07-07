@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :user do
+    # These are all methods:
     name 'Sam'
     email 'sam@gmail.com'
     password '123'
@@ -7,6 +8,8 @@ FactoryGirl.define do
   end
 
   factory :question do
+    # user = FactoryGirl.create :user
+    # user_id user.id
     heading 'Test question'
     content 'What do how why come?'
   end

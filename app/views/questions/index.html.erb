@@ -1,0 +1,15 @@
+<h2>Questions:</h2>
+
+<p class='well'>
+  <% if @questions %>
+    <% @questions.each do |question| %>
+      <ul>
+        <li>
+          <p>
+            <%= link_to question.heading, user_question_path(question.user_id, question) %>
+          </p>
+        </li>
+      </ul>
+    <% end %>
+  <% end %>
+</p>

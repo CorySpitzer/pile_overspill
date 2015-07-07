@@ -1,5 +1,8 @@
 class QuestionsController < ApplicationController
 
+  def index
+    @questions = Question.all
+  end
 
   #new is for when the 'new' view loads;
   def new

@@ -14,6 +14,13 @@ FactoryGirl.define do
     content 'What do how why come?'
   end
 
+  factory :question2, class: Question do
+    # user = FactoryGirl.create :user
+    # user_id user.id
+    heading 'Wherefore?'
+    content 'Whats the deal?!'
+  end
+
   factory :answer do
     content 'Because I said do'
   end

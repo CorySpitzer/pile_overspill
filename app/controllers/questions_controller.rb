@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
+    @questions = Question.all.order(:created_at).reverse_order
   end
 
   #new is for when the 'new' view loads;

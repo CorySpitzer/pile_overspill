@@ -1,1 +1,1 @@
-require 'rails_require'
+require 'rails_helper'

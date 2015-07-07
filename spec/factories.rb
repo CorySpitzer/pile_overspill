@@ -6,4 +6,13 @@ FactoryGirl.define do
     admin false
   end
 
+  factory :question do
+    heading 'Test question'
+    content 'What do how why come?'
+  end
+
+  factory :answer do
+    content 'Because I said do'
+  end
+
 end

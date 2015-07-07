@@ -7,10 +7,12 @@
   <%= @question.content %><br><%= link_to "Edit", edit_user_question_path(@user, @question) %>
 </p>
 
-<h1>Add Answer:</h1>
+<% @question.answers.each do |answer| %>
 
-<%=form_for Answer.new do |f| %>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <%= f.submit "Add Answer" %>
+  <p class="well">
+    <%= answer.content %>
+  </p>
+
 <% end %>
+
+<h1><%= link_to 'Add Answer', new_question_answer_path(@question) %> </h1>

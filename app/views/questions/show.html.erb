@@ -1,8 +1,21 @@
 <h2>Question:</h2>
+<hr>
+<div class="well">
+  <h3>
+    <%= @question.heading %>
+  </h3>
+  <h5>
+    By: <%= @question.user.name %>
+  </h5>
+</div>
+<hr>
+<p>
+  <%= @question.content %>
+</p>
+<hr>
 <h3>
-  <%= @question.heading %>
+  Answers:
 </h3>
-
 <p class='well'>
   <%= @question.content %><br><%= link_to "Edit", edit_user_question_path(@user, @question) %>
 </p>
@@ -15,4 +28,4 @@
 
 <% end %>
 
-<h1><%= link_to 'Add Answer', new_question_answer_path(@question) %> </h1>
+<span class="btn btn-info btn-block" role="button"><%= link_to 'Add Answer', new_question_answer_path(@question) %> </span>

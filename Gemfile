@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+gem 'rails', '>= 4.2'
 gem 'pg'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -22,6 +22,7 @@ group :test, :development do
   gem 'launchy'
   gem 'pry'
   gem 'capybara'
+  gem 'letter_opener'
 end
 
 group :test do

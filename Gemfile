@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
 gem 'bootstrap-sass'
+gem 'mailgunner', '~> 1.3.0'
 
 group :development do
   gem 'byebug'

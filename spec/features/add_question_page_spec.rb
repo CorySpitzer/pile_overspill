@@ -15,13 +15,13 @@ describe 'adding a question' do
   end
 end
 
-describe 'editing a question' do
-  it 'edits a users existing question' do
-    pose_question
-    click_button 'Edit'
-    fill_in 'Heading', with: "Edited Heading"
-    fill_in 'Content', with: "Edited Content"
-    click_button 'Save'
-    expect(page).to have_content 'Edited Heading'
-  end
-end
+# describe 'editing a question' do
+#   it 'edits a users existing question' do
+#     pose_question
+#     click_button 'Edit'
+#     fill_in 'Heading', with: "Edited Heading"
+#     fill_in 'Content', with: "Edited Content"
+#     click_button 'Save'
+#     expect(page).to have_content 'Edited Heading'
+#   end
+# end

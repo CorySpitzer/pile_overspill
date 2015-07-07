@@ -14,9 +14,10 @@ class UsersController < ApplicationController
       flash[:notice] = "Account successfully created!"
       # send email
       UserMailer.signup_confirmation(@user).deliver
+      binding.pry
       redirect_to "/"
-
     else
+      binding.pry
       flash[:alert] = "There was a problem creating your account; please try again."
       redirect_to :new
     end

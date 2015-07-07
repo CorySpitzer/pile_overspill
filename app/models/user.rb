@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_many :answers
   has_many :comments
 
+  after_create :send_confirm_email
+
   attr_accessor :password
   validates_presence_of :password
   validates_presence_of :name
@@ -21,6 +23,10 @@ class User < ActiveRecord::Base
     else
       nil
     end
+  end
+
+  def send_confirm_email
+    UserMailer.signup_confirmation(self).deliver_now
   end
 
 end

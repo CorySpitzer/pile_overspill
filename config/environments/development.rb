@@ -17,7 +17,10 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   # Send mail with letter opener:
-  config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.delivery_method = :letter_opener
+
+  #specify which domain to use for mailer URLS
+  config.action_mailer.default_url_options = {host: "localhost:3000"}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -41,4 +44,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {domain: 'localhost:3000'}
+
 end
